@@ -1,0 +1,23 @@
+﻿<Window x:Class="PizzaOperator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PizzaOperator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Get order" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="87" Height="35" Click="Button_Click"/>
+        <Label Content="" x:Name="name" HorizontalAlignment="Left" Margin="157,15,0,0" VerticalAlignment="Top"/>
+        <Label Content="" x:Name="telephoneL" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="157,67,0,0"/>
+        <Label Content="" x:Name="adressL" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="157,98,0,0"/>
+        <Label Content="" x:Name="emailL" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="157,129,0,0"/>
+        <Label Content="" x:Name="dateL" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="157,160,0,0"/>
+        <Button Content="Confirm order" HorizontalAlignment="Left" Margin="685,18,0,0" VerticalAlignment="Top" Width="87" Height="35" Click="Button_Click_1"/>
+        <Button Content="Cancel order" HorizontalAlignment="Left" Margin="685,58,0,0" VerticalAlignment="Top" Width="87" Height="35" Click="Button_Click_2"/>
+        <Button Content="Left order to other" HorizontalAlignment="Left" Margin="664,98,0,0" VerticalAlignment="Top" Width="108" Height="37" Click="Button_Click_3"/>
+        <Label Content="" x:Name="orderL" HorizontalAlignment="Left" Margin="10,192,0,0" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Window>

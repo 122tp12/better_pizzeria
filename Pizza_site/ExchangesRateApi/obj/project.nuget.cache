@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "5kQW8hzrIVZ9z36vIv/MzbiX9DB03yR8fO3H44rd32y1lOlIRoYIzL+Dpx9mTglQLINm3WKfKsafuZ28M8mD+g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lazok\\source\\repos\\pizza\\ExchangesRateApi\\ExchangesRateApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lazok\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\lazok\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\lazok\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\lazok\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\lazok\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\lazok\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,112 @@
+﻿@model pizza.Views.Cart.PayForOrderModel
+@{
+    Layout = "_Layout";
+}
+
+
+
+
+<div class="row g-5">
+    <div class="col-md-5 col-lg-4 order-md-last p-3">
+        <div class="good-border p-3">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-primary">Your cart</span>
+                <span class="badge bg-primary rounded-pill">@ViewBag.cart</span>
+            </h4>
+            <ul class="list-group mb-3">
+                @for (int i = 0; i < Model.listOfRequeredPizzas.Count; i++)
+                {
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <a href="~/Cart/RemovePosition?idPos=@i" class="btn btn-danger">X</a>
+                        <div>
+                            <h6 class="my-0">@Model.listOfRequeredPizzas[i].pizza.name</h6>
+                            <small class="text-muted">@Model.listOfRequeredPizzas[i].size/@Model.listOfRequeredPizzas[i].richness  @Model.listOfRequeredPizzas[i].components.stringedItems</small>
+                        </div>
+                        <span class="text-muted">
+                            @if (Model.listOfRequeredPizzas[i].pizza.price != -1)
+                            {
+                                <span>@Model.listOfRequeredPizzas[i].pizza.price</span>
+                            }
+                            else
+                            {
+                                <span>?</span>
+                            }
+                            @if (Model.listOfRequeredPizzas[i].addingPrice != 0)
+                            {
+                                <span>+@Model.listOfRequeredPizzas[i].addingPrice</span>
+                            }
+                        </span>
+
+
+                    </li>
+
+                }
+
+                <li class="list-group-item d-flex justify-content-between">
+                    @if (ViewBag.Valute == null || ViewBag.Valute == "uah")
+                    {
+                        <span>Total (HRN)</span>
+                        <strong>@Model.globalPrice грн</strong>
+                    }
+                    else if (ViewBag.Valute == "dol")
+                    {
+                        <span>Total (USD)</span>
+                        <strong>@Model.globalPrice $</strong>
+                    }
+                    else if (ViewBag.Valute == "rub")
+                    {
+                        <span>Total (RUB)</span>
+                        <strong>@Model.globalPrice руб</strong>
+                    }
+
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="col-md-7 col-lg-8 p-3 ps-5">
+        <div class="good-border p-3 me-4">
+            <h4 class="mb-3">Card</h4>
+            <form class="needs-validation" novalidate="" action="~/Cart/PayConfirm" method="post">
+                <input type="hidden" name="idCustomer" value="@ViewBag.id" />
+                <div class="row g-3">
+
+
+                    <div class="col-sm-6">
+                        <label for="bankDate" class="form-label">Bank card date</label>
+                        <input type="date" class="form-control" id="bankDate" name="bankDate" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid date is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="CVV" class="form-label">CVV</label>
+                        <input type="tel" class="form-control" id="CVV" name="CVV" placeholder="111">
+                        <div class="invalid-feedback">
+                            Please enter a valid CVV
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="bankNumber" class="form-label">Bank card</label>
+                        <input type="text" name="bankNumber" class="form-control" id="bankNumber" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid bank number is required.
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <hr class="my-4">
+
+
+
+
+
+
+                <button class="w-100 btn btn-primary btn-lg" type="submit">Confirm</button>
+            </form>
+        </div>
+    </div>
+</div>

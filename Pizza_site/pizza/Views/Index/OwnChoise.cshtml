@@ -1,0 +1,112 @@
+﻿
+@model pizza.Views.Index.OwnChoiseModel
+@{
+    Layout = "_Layout";
+}
+
+<style>
+    .round {
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        padding: 3px;
+    }
+
+        .round a {
+            color: white;
+        }
+    .spacer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .my-btn {
+        width: 100px;
+        margin-left: 60px;
+    }
+</style>
+
+<div class="spacer">
+    <h1 class="display-4">Власний вибір</h1>
+
+    <hr class="my-4" />
+
+
+    <form action="~/Index/SaveOwnOrder" method="post">
+        <p class="h5">Size:</p>
+        <div class="spacer">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="size" value="24" id="flexRadioDefault1" selected>
+                <label class="form-check-label" for="flexRadioDefault1">
+                    24sm
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="size" value="27" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    27sm
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="size" value="30" id="flexRadioDefault3">
+                <label class="form-check-label" for="flexRadioDefault3">
+                    30sm
+                </label>
+            </div>
+        </div>
+        <hr class="my-4" />
+        <p class="h5">Richness:</p>
+        <div class="spacer">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="richnes" value="rich" id="flexRadioDefault4" selected>
+                <label class="form-check-label" for="flexRadioDefault4">
+                    Rich
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="richnes" value="normal" id="flexRadioDefault5">
+                <label class="form-check-label" for="flexRadioDefault5">
+                    Normal
+                </label>
+            </div>
+        </div>
+        <hr class="my-4" />
+        @*<input type="text" value="" id="list" name="components" />
+            <select id="selections">
+                @foreach (var i in Model.components.components)
+                {
+                    <option>
+                        @i
+                    </option>
+                }
+            </select>
+            <button onclick="funk()" type="button">Add</button>
+            <button onclick="funk2()" type="button">Clear</button>*@
+
+        <p class="h5">Components:</p>
+        <input type="text" value="" class="form-control" data-role="tagsinput" placeholder="Add components" name="components" />
+
+        <br />
+        <input type="submit" name="button" value="Ok" class="form-control my-btn" />
+    </form>
+</div>
+<script>
+    document.addEventListener("DOMLoadListner", ready);
+    function ready() {
+
+    }
+    var mas = [];
+    function funk() {
+        mas.push(document.getElementById("selections").value);
+        var str = "";
+        str += mas[0];
+        for (var i = 1; i < mas.length; i++) {
+
+            str += ", " + mas[i];
+        }
+        document.getElementById("list").value = str;
+    }
+    function funk2() {
+        mas = [];
+        document.getElementById("list").value = "";
+    }
+</script>

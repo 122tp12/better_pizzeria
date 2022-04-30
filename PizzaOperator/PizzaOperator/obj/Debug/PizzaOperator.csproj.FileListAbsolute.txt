@@ -1,0 +1,15 @@
+C:\Users\lazok\source\repos\PizzaOperator\PizzaOperator\bin\Debug\PizzaOperator.exe.config
+C:\Users\lazok\source\repos\PizzaOperator\PizzaOperator\bin\Debug\PizzaOperator.exe
+C:\Users\lazok\source\repos\PizzaOperator\PizzaOperator\bin\Debug\PizzaOperator.pdb
+C:\Users\lazok\source\repos\PizzaOperator\PizzaOperator\obj\Debug\PizzaOperator.csprojAssemblyReference.cache
+C:\Users\lazok\source\repos\PizzaOperator\PizzaOperator\obj\Debug\MainWindow.g.cs
+C:\Users\lazok\source\repos\PizzaOperator\PizzaOperator\obj\Debug\App.g.cs
+C:\Users\lazok\source\repos\PizzaOperator\PizzaOperator\obj\Debug\PizzaOperator_MarkupCompile.cache
+C:\Users\lazok\source\repos\PizzaOperator\PizzaOperator\obj\Debug\PizzaOperator_MarkupCompile.lref
+C:\Users\lazok\source\repos\PizzaOperator\PizzaOperator\obj\Debug\MainWindow.baml
+C:\Users\lazok\source\repos\PizzaOperator\PizzaOperator\obj\Debug\PizzaOperator.g.resources
+C:\Users\lazok\source\repos\PizzaOperator\PizzaOperator\obj\Debug\PizzaOperator.Properties.Resources.resources
+C:\Users\lazok\source\repos\PizzaOperator\PizzaOperator\obj\Debug\PizzaOperator.csproj.GenerateResource.cache
+C:\Users\lazok\source\repos\PizzaOperator\PizzaOperator\obj\Debug\PizzaOperator.csproj.CoreCompileInputs.cache
+C:\Users\lazok\source\repos\PizzaOperator\PizzaOperator\obj\Debug\PizzaOperator.exe
+C:\Users\lazok\source\repos\PizzaOperator\PizzaOperator\obj\Debug\PizzaOperator.pdb
